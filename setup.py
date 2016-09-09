@@ -22,7 +22,7 @@ setup(
     version=get_version(),
     description='Django Activatable Model',
     long_description=open('README.md').read(),
-    url='https://github.com/ambitioninc/django-activatable-model',
+    url='https://github.com/margincall/django-activatable-model',
     author='Wes Kendall',
     author_email='opensource@ambition.com',
     keywords='Django, Model, Activatable',
