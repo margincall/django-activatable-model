@@ -48,9 +48,9 @@ class ActivatableQuerySet(ManagerUtilsQuerySet):
 
 class ActivatableManager(ManagerUtilsManager):
     def get_queryset(self):
-        return ActivatableQuerySet(self.model)
+        return ActivatableQuerySet(self.model).activate()
 
-    def activate(self):
+    def default(self):
         return self.get_queryset().activate()
 
     def deactivate(self):
